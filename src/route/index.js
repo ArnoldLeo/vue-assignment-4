@@ -1,7 +1,7 @@
 import { createRouter,createWebHistory} from "vue-router";
 import Home from '@/components/home/Home.vue'
 const routes=[
-    { path: '/:pathMatch(.*)*', name: 'Home', component:Home   },
+    { path: '/:pathMatch(.*)*',  component:Home   },
     {
         path: '/home',
         name: 'home',

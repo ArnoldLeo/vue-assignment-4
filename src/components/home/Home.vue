@@ -25,7 +25,7 @@
 </template>
 
 <script>
-// import { mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 // import { useStore } from "vuex";
 import EpisodeDesc from "./EpisodeDesc.vue";
 
@@ -39,9 +39,9 @@ export default {
     };
   },
   computed: {
-    // ...mapGetters(["getContentList"]),
+    ...mapGetters(["getContentList"]),
     groupbySeason() {
-      let episodeLists = this.$store.getters.getContentList;
+      let episodeLists = this.getContentList;
     //   console.log("getters",this.$store.getters.getContentList)
       let list = {};
 
